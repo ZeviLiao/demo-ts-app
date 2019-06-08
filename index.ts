@@ -1,8 +1,8 @@
 
-const sayHello = (word?: string): string => {
-    console.log(word || 'hello')
-    return word || 'hello'
+const sayHello = (word = 'hello', ...otherStuff:string[]): string => {
+    console.log(otherStuff)
+    return word
 }
 
-sayHello()
+sayHello('Zevi', 'Liao')
 
